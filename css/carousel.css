@@ -1,0 +1,143 @@
+.carousel{
+    background-color: blueviolet;
+    width: 80%;
+    height: 50%;
+}
+
+
+
+
+#slider {    
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+#slides {
+    height: 100%;
+    width: 400%;
+}
+
+.slide {
+    /* dummy width */
+    width: 25%; 
+    float: left;
+    position: relative;
+}
+
+
+
+#thumbs a, #thumbs a:visited {
+    color: #c550fb;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    height: 48px;
+    border: 1px solid rgb(90, 90, 90);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    opacity: 0.8;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#thumbs li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+
+#thumbs li.active a, #thumbs li.active a:hover {
+    border: 1px solid #DAD4CF;;
+    opacity: 1;
+}
+
+.caption {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    right: 10px;
+    padding: 20px 40px;
+    background-color:rgba(0, 0, 0, 0.46);
+    color: #fff;
+    text-align: left;
+    
+}
+
+.caption .controllers span {
+    display: inline-block;
+    list-style: none;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: calc(50% - 8px);
+    cursor: pointer;
+}
+
+.caption .controllers .right {
+    right: 15px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+}
+
+.caption .controllers .left {
+    left: 15px; 
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(-45deg);
+}
+
+/*
+@media (max-width: 658px) {
+  #thumbs li a {
+    width: 50px;
+    height: 25px;
+  }
+}*/
+
+
+
+
+@media(max-width: 680px){
+    .img-size {
+        object-fit: cover;
+        height: 32vh;
+    }
+    .thumbs-img-size {
+        width: 13vw;
+        height: 13vw;
+      }
+}
+
+
+
+@media(min-width: 680px){
+    .img-size{
+        object-fit: cover;
+        height: 80.2vh;    
+    }
+    #thumbs {
+        position: absolute;
+        display: block;
+        bottom: 10vh;
+        left: 10vw;
+    }
+    
+.thumbs-img-size{
+    width: 6vw;
+    height: 7vw;
+}
+#thumbs li a {
+    width: 6.2vw;
+    height: 7.2vw;
+}
+    
+}

@@ -1,0 +1,45 @@
+
+.card-icons{
+    list-style: none;
+    display:flex;
+    width:50%;
+    justify-content: space-around;    
+}
+
+.card-icon-link{
+    text-decoration: none;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: border .3s;
+}
+
+.card-icon {
+    font-size:15px;
+    color:#fff;
+    transition: color .3s;
+}
+
+.card-icon-link:hover .card-icon{
+    color:hsl(0, 0%, 60%);
+}
+
+.top-nav-ul-visiblel  a:visited {
+    color: #50e1fb;
+}
+
+
+.link-a a {
+    color: #ececec !important
+}
+
+.link-a2 a {
+    text-decoration: none;
+    color: #333333 !important;
+}
+
+.link-a2  a:hover {    
+    color: #d17199 !important
+}
